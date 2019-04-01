@@ -1,0 +1,89 @@
+
+<html>
+
+	<head>
+		<title>Filtru de continut - Sedinta 4</title>
+		<meta charset="utf8" />
+	</head>
+	
+	<body>
+	
+		<!-- FORMULARUL DE FILTRARE -->
+	
+		<form id="formular_filtrare" autocomplete="off">
+		
+			<select id="marca">
+				<option value="0" selected>Fara filtare</option>
+				<option value="dacia">Dacia</option>
+				<option value="ford">Ford</option>
+				<option value="audi">Audi</option>
+			</select>
+			 | 
+			<select id="culoare">
+				<option value="0" selected>Fara filtare</option>
+				<option value="alb">Alb</option>
+				<option value="albastru">Albastru</option>
+				<option value="negru">Negru</option>
+			</select>
+			 | 
+			<select id="anfabricatie">
+				<option value="0" selected>Fara filtare</option>
+				<option value="2017">2017</option>
+				<option value="2018">2018</option>
+				<option value="2016">2016</option>
+			</select>
+		
+		</form>
+		
+		<!-- END FORMULARUL DE FILTRARE -->
+		
+		<hr />
+		
+		<!-- CONTINUT -->
+		
+		<div id="content">
+		
+			<div data-marca="dacia" data-culoare="alb" data-anfabricatie="2017">
+				<b>Marca:</b> Dacia<br />
+				<b>Culoare:</b> Alb<br />
+				<b>An fabricatie:</b> 2017<br />
+				<hr />
+			</div>
+			
+			<div data-marca="dacia" data-culoare="albastru" data-anfabricatie="2016">
+				<b>Marca:</b> Dacia<br />
+				<b>Culoare:</b> Albastru<br />
+				<b>An fabricatie:</b> 2016<br />
+				<hr />
+			</div>
+			
+			<div data-marca="ford" data-culoare="negru" data-anfabricatie="2018">
+				<b>Marca:</b> Ford<br />
+				<b>Culoare:</b> Negru<br />
+				<b>An fabricatie:</b> 2018<br />
+				<hr />
+			</div>
+			
+			<div data-marca="ford" data-culoare="alb" data-anfabricatie="2017">
+				<b>Marca:</b> Ford<br />
+				<b>Culoare:</b> Alb<br />
+				<b>An fabricatie:</b> 2017<br />
+				<hr />
+			</div>
+			
+			<div data-marca="audi" data-culoare="negru" data-anfabricatie="2016">
+				<b>Marca:</b> Audi<br />
+				<b>Culoare:</b> Negru<br />
+				<b>An fabricatie:</b> 2016<br />
+				<hr />
+			</div>
+			
+		</div>
+		
+		<!-- END CONTINUT -->
+		
+		<script type="text/javascript" src="filtru_continut.js"></script>
+	
+	</body>
+
+</html>
